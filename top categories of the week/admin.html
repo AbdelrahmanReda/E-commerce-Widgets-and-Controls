@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="../top categories of the week/main.js"></script>
+    <link rel="stylesheet" href="../top categories of the week/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Grid creator</title>
+</head>
+
+<body>
+    <div class="container-fluid" id="con">
+        <h1>Grid Creator</h1>
+        <form action="#" id="form1" class="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="numRows">Number of Rows:</label>
+                <input type="text" class="form-control" id="numRows" placeholder="Enter Number of Rows" name="numRows"
+                    required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <div class="form-group">
+                <label for="numCols">Number of Cols:</label>
+                <input type="text" class="form-control" id="numCols" placeholder="Enter Number of Cols" name="numCols"
+                    required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+            </div>
+            <button type="submit" id="btn1" class="btn btn-primary">Enter Data</button>
+        </form>
+        <div class="p-3" style="height: 30px;"></div>
+
+        <div id="container" class="border p-2" style="width: 100%;height: 190px;overflow-y: scroll;"></div>
+
+        <div class="container-fluid pt-3">
+            <form action="#" id="form3" class="needs-validation" novalidate>
+                <div class="form-group t1">
+                    <label for="numCols">Enter Items for each brand (head included): </label>
+                    <div id="row1" class="row py-3 px-2 border">
+
+                    </div>
+                </div>
+                <button type="submit" id="btn2" class="btn btn-primary">Create Grid</button>
+            </form>
+
+        </div>
+
+
+    </div>
+    <script>
+        // Disable form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Get the forms we want to add validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>
