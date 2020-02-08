@@ -61,6 +61,8 @@
         /*small devices*/
         @media (max-width: 767px) {
 
+            
+
             body {}
 
             #last-col {
@@ -73,21 +75,10 @@
 
 
             }
-
-
             .square-frame {
                 width: 100px;
                 height: 100px;
             }
-
-
-
-
-
-
-
-
-
             #second-container {
 
                 padding-left: 10px;
@@ -99,9 +90,28 @@
             }
 
         }
+        @media(min-width: 0px)
+        {
+            .flex-column {
+                
+                flex-direction: row !important;
+   
+}
 
+.col-lg-2.col-md-3.colxl-3{
+    padding: 0px;
+    
+}
+        }
         /*medium devices*/
         @media (min-width: 768px) {
+            .flex-column {
+              
+                flex-direction: column !important;
+   
+}
+
+
             .col-lg-2.col-md-3.colxl-3 {
                 padding: 0px;
 
@@ -181,9 +191,9 @@
         @media (min-width: 992px) {
             #thumbnail-product-image {
 
-                padding-top: 10px;
-
-
+                background-color: rgb(243, 81, 75);
+                height: fit-content !important;
+                padding-top: 0px !important;
             }
 
             #product-descriptions {
@@ -296,6 +306,7 @@
         .new-arrival {
             position: absolute;
             left: 30px;
+            top: 10px;
             padding: 0px 6px;
             background-color: rgb(255, 0, 0);
             color: white;
@@ -338,6 +349,28 @@
             background-color: darkgrey;
             opacity: 1;
         }
+        .h5, h5 {
+    font-size: 1.04rem !important;
+}
+
+.up-menue-container:hover .inner-2 {
+                                        transform: translateY(-30%);
+                                      }
+
+.sold-by{
+
+}
+
+          
+          
+          .inner-2 {
+            background-color: rgba(0,0,255,.5);
+            
+          }
+          .text-wrabber.pt-2.pl-3{
+              padding-top: 0px !important;
+              padding-left: 10px !important;
+          }
     </style>
 
 </head>
@@ -356,32 +389,32 @@
             <div class="col-lg-2 col-md-3 colxl-3">
                 <div class=" text-wrabber pt-2 pl-3">
                     <h5>Lorem, ipsum dolor.</h5>
-                    <ul class="nav flex-column pt-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Best Seller</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">New Arrivals</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Women</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Men</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Boys</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Girls</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Baby</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Sales & Deals</a>
-                        </li>
-                    </ul>
+                        <ul class="nav flex-column pt-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Best Seller</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">New Arrivals</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Women</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Men</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Boys</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Girls</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Baby</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Sales & Deals</a>
+                            </li>
+                        </ul>
                 </div>
 
             </div>
@@ -438,15 +471,28 @@
 
 
                             <div id="product-container" style="padding: 0px 0px;">
-                                <div id="thumbnail-product-image" " >
-<div class=" new-arrival">
+                                <div id="thumbnail-product-image" style="" >
+                                    <div class=" new-arrival">
                                     <p>NEW</p>
-                                </div>
-                                <img src="http://demo2.drfuri.com/martfury10/wp-content/uploads/sites/51/2017/09/1a.jpg"
-                                    class="img-fluid" alt="Responsive image">
+                                    
+                                     </div>
+                                   
+
+
+                                   
+
+                                    <div class="up-menue-container" style="overflow: hidden;">
+                                        <img src="http://demo2.drfuri.com/martfury10/wp-content/uploads/sites/51/2017/09/1a.jpg"
+                                        class="img-fluid" alt="Responsive image" style="overflow: hidden;">
+                                        <div class="inner-2"></div>
+
+                                    </div>
+                               
 
                             </div>
                             <div id="product-descriptions">
+                                <p class="sold-by">sold by:New Genration </p>
+                            
                                 <h5 style=" color: #06c; margin: 0px; font-size: 17px; "> Lorem ipsum dolor sit
                                     amet.
                                 </h5>

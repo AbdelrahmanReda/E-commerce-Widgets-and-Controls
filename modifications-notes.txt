@@ -1,0 +1,2 @@
+Make thumbnail product container height fit to content width with removing pading from top
+Fix list menue in mobile view by making it horizontally  
